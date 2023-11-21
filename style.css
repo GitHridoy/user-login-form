@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(./image/Login.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.login{
+    max-width: 1000px;
+    margin: 70px auto;
+}
+form{
+    width: 700px;
+    margin: auto;
+    padding: 100px 50px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    visibility: hidden;
+    transition: 0.5s ease;
+    border: 2px solid #fbff00;
+}
+form .title{
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+
+}
+form .email, .password{
+     margin-bottom: 20px;
+}
+form input{
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+form input::placeholder{
+    font-size: 17px;
+    color: black;
+}
+
+.function{
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+form .button{
+    margin-top: 10px;
+    
+}
+form button{
+    width: 100%;
+    padding: 10px 5px;
+    background-color: rgb(1, 203, 230);
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.close{
+   position: absolute;
+   top: 20px;
+   right: 15px;
+   cursor: pointer;
+   color: wheat;
+   font-size: 30px;
+}
+
+#login{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    padding: 10px 30px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+form.show{
+    visibility: visible;
+    transform: translateY(30px);
+    transition: 0.5s ease;
+}

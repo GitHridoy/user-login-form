@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="login">Login</button>
+    <div class="login">
+        <form>
+            <div class="title"><h2>Login</h2></div>
+            <div class="email"><input type="email" placeholder="Email"></div>
+            <div class="password"><input type="password" placeholder="Password"></div>
+            <div class="function">
+                <div class="check-box"><input type="checkbox"></div>
+                <div class="forgot"><p>Remamber</p></div>
+            </div>
+            <div class="button"><button id="btn">Login</button></div>
+            <div class="close">Close</div>
+        </form>
+    </div>
+    <script>
+        let button = document.getElementById('login');
+        let Popitem = document.querySelector('form');
+        let close = document.querySelector('.close');
+        button.addEventListener('click', event=>{
+             Popitem.classList.add('show');
+        })
+        close.addEventListener('click', ()=>{
+            Popitem.classList.remove('show');
+        })
+    </script>
+</body>
+</html>
